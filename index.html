@@ -5,35 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The AI Poem Generator</title>
     <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
-      <h1>The AI Poem Generator</h1>
-    </header>
-    <main>
-      <form>
-        <input
-          type="text"
-          class="text-input"
-          placeholder="Enter poem topic..."
-          autofocus
-          required
-        />
-        <input type="submit" class="text-submit" />
-      </form>
-      <div class="poem-output">
-        Your poem will appear here ✍️ <br />
-        Please be patient 🕰️
-      </div>
-    </main>
-    <footer>
-      This project was coded by
-      <a target="_blank" href="https://hollyberrywigmore.com/"
-        >Holly Wigmore💟</a
-      >
-      and is open-sourced on
-      <a target="_blank" href="https://github.com/Holly-Wigmore">GitHub👩‍💻</a>
-    </footer>
+    <div class="container">
+      <header>
+        <h1>The AI Poem Generator</h1>
+      </header>
+      <main>
+        <form>
+          <input
+            type="text"
+            class="text-input"
+            placeholder="Enter poem topic..."
+            autofocus
+            required
+          />
+          <input type="submit" class="text-submit" />
+        </form>
+
+        <div class="poem-output">
+          Your poem will appear here ✍️ <br />
+          Please be patient 🕰️
+        </div>
+      </main>
+
+      <footer>
+        This project was coded by
+        <a target="_blank" href="https://hollyberrywigmore.com/"
+          >Holly Wigmore💟</a
+        >
+        and is open-sourced on
+        <a target="_blank" href="https://github.com/Holly-Wigmore">GitHub👩‍💻</a>
+      </footer>
+    </div>
     <script src="src/script.js"></script>
   </body>
 </html>
