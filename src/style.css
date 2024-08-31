@@ -7,6 +7,7 @@ body {
   width: 600px;
   display: block;
   margin: 0 auto;
+  margin-top: 40px;
   padding: 10px;
   border-radius: 10px;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
@@ -55,6 +56,10 @@ form {
   border-top: 3px dashed grey;
   border-bottom: 3px dashed grey;
   padding: 20px;
+}
+.poem-output em {
+  color: #929aab;
+  font-size: 20px;
 }
 footer {
   text-align: center;
