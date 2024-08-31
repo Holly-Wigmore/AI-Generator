@@ -1,4 +1,6 @@
 function displayPoem(response) {
+  let poemOutput = document.querySelector("#poem-output");
+  poemOutput.classList.remove("blink");
   new Typewriter("#poem-output", {
     strings: response.data.answer,
     autoStart: true,
@@ -21,13 +23,10 @@ function generatePoem(event) {
   console.log(`Context: ${context}`);
 
   axios.get(apiUrl).then(displayPoem);
-
-  new Typewriter("#poem-output", {
-    strings: "Generating Your Poem...<br/> This won't take long!",
-    autoStart: true,
-    delay: 1,
-    cursor: "",
-  });
+  let poemOutput = document.querySelector("#poem-output");
+  poemOutput.classList.add("blink");
+  poemOutput.classList.remove("hidden");
+  poemOutput.innerHTML = `⏳ Generating Your Poem about ${textInput.value}!`;
 }
 
 let formSubmitElement = document.querySelector("#poem-form");

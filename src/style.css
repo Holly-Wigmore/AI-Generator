@@ -21,26 +21,27 @@ h1 {
 }
 form {
   padding: 10px;
+  display: flex;
 }
+
 .text-input {
-  display: block;
-  margin: 0 auto;
   width: 80%;
-  padding: 10px 20px;
-  border-radius: 10px;
   color: grey;
+  height: 25%;
+  padding: 10px 20px;
   font-size: 18px;
-  border: solid 3px grey;
+  border: solid 3px black;
+  margin: 5px;
+  border-radius: 10px;
 }
 .text-submit {
-  display: block;
-  margin: 0 auto;
-  margin-top: 10px;
+  height: 25%;
   padding: 10px 20px;
-  border-radius: 10px;
   font-size: 18px;
-  background: #faf6e9;
   border: solid 3px black;
+  margin: 5px;
+  border-radius: 10px;
+  background: #faf6e9;
   transition: all 150ms ease-in-out;
 }
 .text-submit:hover {
@@ -49,13 +50,32 @@ form {
   border: 3px solid #faf6e9;
   transform: scale(1.1);
 }
+.hint {
+  margin-left: 25px;
+
+  font-style: italic;
+  font-size: 16px;
+}
 .poem-output {
   margin: 20px;
   text-align: center;
-  font-size: 24px;
+  font-size: 20px;
   border-top: 3px dashed grey;
   border-bottom: 3px dashed grey;
   padding: 20px;
+  line-height: 34px;
+}
+.blink {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+.hidden {
+  display: none;
 }
 .poem-output em {
   color: #929aab;
