@@ -57,6 +57,7 @@ form {
   font-size: 16px;
 }
 .poem-output {
+  font-family: "Merriweather", serif;
   margin: 20px;
   text-align: center;
   font-size: 20px;
@@ -82,9 +83,12 @@ form {
   font-size: 20px;
 }
 footer {
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 550px;
   text-align: center;
-  font-size: 15px;
-  margin: 10px;
+  font-size: 12px;
   padding: 10px;
 }
 a {
